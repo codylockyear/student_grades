@@ -30,4 +30,7 @@ linear.fit(x_train, y_train)
 
 acc = linear.score(x_test, y_test)
 
-print(acc)
+prediction = linear.predict(x_test)
+
+for x in range(len(prediction)):
+    print(prediction[x], x_test[x], y_test[x])
