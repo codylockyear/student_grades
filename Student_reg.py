@@ -28,7 +28,7 @@ linear = linear_model.LinearRegression()
 
 linear.fit(x_train, y_train)
 
-acc = linear.score(x_test, y_test)
+accuracy = linear.score(x_test, y_test)
 
 prediction = linear.predict(x_test)
 
